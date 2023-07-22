@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- if you put the style.css file in a dist folder -->
+    <!-- I did the styling with SCSS so it was compilled YG ? -->
+    <link rel="stylesheet" href="dist/style.css">
+    <!-- Incase you missed it, it'll still work lol -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //calculator outer container -->
+    <div class="outCont">
+        <!-- //operations and answer display -->
+        <div id="disp">
+            <div id="calcDisp"></div>
+            <div id="ansDisp"></div>
+        </div>
+        <!-- //inner container for buttons and all -->
+        <div class="inCont">
+            <!-- //first 4 buttons C % del and sum -->
+            <button class="but" onclick="clar()" placeholder="hi" id="clear"><i class="fa-solid fa-c"></i></button>
+            <button class="but" onclick="per()" placeholder="hi" id="perc"><i class="fa-solid fa-percentage"></i></button>
+            <button class="but" onclick="backSpace()" placeholder="hi" id="del"><i class="fa-solid fa-backspace"></i></button>
+            <button class="but" id="add" onclick="add()" placeholder="hi"><i class="fa-solid fa-add"></i></button>
+            <!-- //second 4 buttons 7 8 9 and times -->
+            <button class="but" id="7" onclick="num(this)"><i class="fa-solid fa-7"></i></button>
+            <button class="but" id="8" onclick="num(this)"><i class="fa-solid fa-8"></i></button>
+            <button class="but" id="9" onclick="num(this)"><i class="fa-solid fa-9"></i></button>
+            <button class="but" id="mul" onclick="mul()" placeholder="hi"><i class="fa-solid fa-times"></i></button>
+            <!-- //third 4 buttons 4 5 6 and minus -->
+            <button class="but" id="4" onclick="num(this)"><i class="fa-solid fa-4"></i></button>
+            <button class="but" id="5" onclick="num(this)"><i class="fa-solid fa-5"></i></button>
+            <button class="but" id="6" onclick="num(this)"><i class="fa-solid fa-6"></i></button>
+            <button class="but" id="sub" onclick="sub()" placeholder="hi"><i class="fa-solid fa-minus"></i></button>
+            <!-- //fourth 4 buttons 1 2 3 and div -->
+            <button class="but" id="1" onclick="num(this)"><i class="fa-solid fa-1"></i></button>
+            <button class="but" id="2" onclick="num(this)"><i class="fa-solid fa-2"></i></button>
+            <button class="but" id="3" onclick="num(this)"><i class="fa-solid fa-3"></i></button>
+            <button class="but" placeholder="hi" onclick="div()">/</button>
+            <!-- //5th 4 buttons 00 0 . and equal -->
+            <button class="but" id="00" onclick="num(this)">00</button>
+            <button class="but" id="0" onclick="num(this)"><i class="fa-solid fa-0"></i></button>
+            <button class="but" id="." onclick="num(this)"><i class="fa-solid fa-dog"></i></button>
+            <button class="but" id="tot" onclick="equals()" placeholder="hi"><i class="fa-solid fa-equals"></i></button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
